@@ -1,0 +1,135 @@
+.header-bg {
+  background: #f6f6f9;
+  padding-top: 50px;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  list-style: none;
+}
+
+.header__top-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+  border-radius: 5px;
+  width: 320px;
+  height: 40px;
+}
+
+.header__logo {
+  display: block;
+  padding-top: 8px;
+}
+
+.header__item {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7a7a7a;
+}
+
+.header__item strong {
+  color: #285193;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.header__links-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 38px;
+  height: 40px;
+  background-color: #ffffff;
+}
+.header__links-btn img {
+  margin-top: 8px;
+  margin-left: 4px;
+}
+
+.header__links-btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 65px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #535353;
+}
+
+.header__links-btn3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
+  border-radius: 5px;
+  width: 146px;
+  height: 40px;
+}
+
+.header__nav {
+  background: #ffffff;
+  box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+  border-radius: 5px;
+}
+
+.nav__list {
+  padding: 21px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav__link {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  color: #515151;
+  transition: all 0.5s ease;
+}
+
+.nav__link:hover {
+  color: #295091;
+}
+
+.header__image {
+  margin-top: 18px;
+  padding-bottom: 25px;
+  width: 100%;
+}

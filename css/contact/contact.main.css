@@ -1,0 +1,240 @@
+.forms__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 12px;
+  margin-top: 17px;
+}
+
+.forms__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.form input {
+  width: 600px;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  height: 60px;
+  display: block;
+  margin-bottom: 20px;
+  outline: none;
+  background: #f1f1f1;
+  opacity: 0.3;
+  border: 2px solid #285193;
+  border-radius: 5px;
+}
+
+.form input[type="file"] {
+  width: 221px;
+  height: 50px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #888888;
+}
+
+.form__textarea {
+  background: #f1f1f1;
+  opacity: 0.3;
+  border: 2px solid #285193;
+  border-radius: 5px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #888888;
+  resize: none;
+  width: 600px;
+  height: 307px;
+  padding-left: 16px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+.form input[placeholder="Код"] {
+  width: 221px;
+  height: 50px;
+}
+
+.form__btn {
+  padding: 15px 61px;
+  width: 221px;
+  height: 50px;
+  background: #295093;
+  border: 2px solid rgba(40, 81, 147, 0.54);
+  border-radius: 5px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.forms__right {
+  box-shadow: 0px 8px 9px rgba(57, 57, 57, 0.25);
+  border-radius: 5px;
+  border: 2px solid #bcc3cd;
+  border-radius: 5px;
+  width: 510px;
+  height: 280px;
+}
+
+.forms__rigth-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forms__right-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #295091;
+  padding-top: 23px;
+  padding-right: 10px;
+  margin-bottom: 21px;
+  text-align: end;
+}
+
+.forms__right-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.forms__right-infos span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #888888;
+  margin-bottom: 30px;
+}
+
+.forms__right-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.links__email {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #888888;
+  margin-bottom: 25px;
+}
+
+.forms__right-socials {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 17px;
+}
+
+.forms__right-btn {
+  width: 150px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #295091;
+  border-radius: 5px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.right__store {
+  display: flex;
+  gap: 13px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  display: none;
+  opacity: 0;
+}
+.overlay:target {
+  display: block;
+  opacity: 1;
+}
+
+.popup {
+  margin: 200px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  text-align: center;
+  color: #295093;
+  margin-bottom: 20px;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}

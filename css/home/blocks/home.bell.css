@@ -1,0 +1,51 @@
+.bell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(239, 186, 84, 0.18);
+  border-radius: 5px;
+  height: 91px;
+  margin-bottom: 46px;
+}
+
+.bell__items {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-left: 34px;
+}
+
+.bell__text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.bell__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    #fe5c28 0%,
+    rgba(255, 139, 54, 0.9) 88.43%
+  );
+  border-radius: 5px;
+  width: 264px;
+  height: 42px;
+  margin-right: 20px;
+  transition: all 0.6s ease;
+}
+
+.bell__btn:hover {
+  box-shadow: 1px 2px 3px crimson;
+}

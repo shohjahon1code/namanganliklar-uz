@@ -1,0 +1,148 @@
+.news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.news-btn{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 18px;
+  margin-bottom: 38px;
+}
+
+.news__left-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+  width: 211px;
+  height: 42px;
+  background: #295093;
+border-radius: 5px;
+}
+
+.news__items {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.news__items-img {
+  margin-right: 19px;
+}
+
+.items-div__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  width: 434px;
+  height: 42px;
+  color: #202020;
+  margin-bottom: 8px;
+}
+
+.items-div__text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #434343;
+  width: 512px;
+  height: 55px;
+  margin-bottom: 12px;
+}
+
+.items-div__time {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7688a4;
+  cursor: pointer;
+}
+
+.news__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news__right-items {
+  background: #f6f6f9;
+  border-radius: 5px;
+}
+
+.news__right-div {
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.news__right-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #202020;
+  padding-top: 16px;
+  padding-left: 20px;
+  margin-bottom: 6px;
+}
+
+.news__right-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #202020;
+  width: 347px;
+  height: 62px;
+  padding-left: 20px;
+  margin-bottom: 11px;
+}
+
+.news__right-date {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7688a4;
+  padding-left: 20px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.news__right-img {
+  width: 100%;
+  height: 477px;
+  margin-bottom: 38px;
+}

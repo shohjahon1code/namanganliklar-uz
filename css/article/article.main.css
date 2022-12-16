@@ -1,0 +1,95 @@
+.news__top-m {
+  margin-top: 89px;
+}
+
+.article__img {
+  margin-bottom: 36px;
+}
+
+.article__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.article__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.article__quote {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.article__hashtag {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #28508e;
+  border-bottom: 2px solid #ebebeb;
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+}
+
+.news__right {
+  margin-top: 20px;
+}
+
+.newsTheme__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 39px;
+  color: #000000;
+}
+
+.newsTheme__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.newsTheme__partions{
+  margin-bottom: 34px;
+}
+
+.newsTheme__img {
+  margin-bottom: 11px;
+}
+
+.newsTheme__txt {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #202020;
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 11px;
+}
+
+.newsTheme__time {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6b6d97;
+}

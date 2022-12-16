@@ -1,0 +1,153 @@
+.hero {
+  margin-top: 20px;
+}
+
+.hero__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 133px;
+  background: #f6f6f9;
+  border-radius: 5px;
+  margin-bottom: 18px;
+}
+
+.hero__info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  border-right: 1px solid #eb5569;
+}
+
+.hero__info-item:last-child {
+  border: none;
+}
+
+.info__text {
+  width: 232px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-right: 10px;
+}
+
+.info__text2,
+.info__text3 strong {
+  color: black;
+}
+
+.info__text2 {
+  width: 160px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #db0000;
+}
+
+.info__text3 {
+  width: 160px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #05b135;
+}
+
+.hero__articles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.articles__items {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.articles__items:hover .articles__items-btn {
+  display: block;
+}
+.articles__items:hover .article__overlay {
+  display: block;
+}
+.article__overlay {
+  position: absolute;
+  width: 100%;
+  border-radius: 12px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(128, 119, 119, 0.5);
+  display: none;
+  box-shadow: 10px 3px 10px rgba(201, 198, 188, 0.308);
+}
+
+.articles__items-btn {
+  display: none;
+  position: absolute;
+  top: 30%;
+  right: 40%;
+  padding: 10px;
+  z-index: 1;
+  background-color: red;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.edit {
+  display: none;
+  position: absolute;
+  top: 30%;
+  right: 25%;
+  padding: 8px;
+  z-index: 2;
+  background-color: red;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: default;
+}
+
+.articles__items:hover .edit {
+  display: block;
+}
+.articles__items:hover .article__overlay {
+  display: block;
+}
+
+.articles__items-img {
+  margin-bottom: 11px;
+  border-radius: 12px;
+}
+
+.articles__items-title {
+  width: 380px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #202020;
+  margin-bottom: 11px;
+}
+
+.articles__items-time {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6b6d97;
+  cursor: pointer;
+}

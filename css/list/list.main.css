@@ -1,0 +1,8 @@
+.news__right{
+  justify-content: flex-start;
+}
+
+.news__right-img{
+  margin-bottom: 0;
+  margin-top: 20px;
+}

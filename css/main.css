@@ -1,0 +1,151 @@
+/* Normalize */
+@import "./normalize/normalize.css";
+
+/* Home */
+@import "./home/home.main.css";
+
+/* General css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* Container */
+.container {
+  max-width: 1220px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgb(65, 60, 60, 0.7);
+  display: none;
+}
+
+.backdrop.visible {
+  display: block;
+}
+
+
+.addNews-modal {
+  position: fixed;
+  max-width: 50%;
+  width: 100%;
+  min-height: 400px;
+  top: 30%;
+  right: 30%;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(54, 104, 133, 0.9);
+  transition: all 0.5s linear;
+  display: none;
+}
+
+.addNews-modal.active {
+  display: block;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.forms__title {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.forms input {
+  width: 70%;
+  padding: 10px;
+}
+
+.forms button {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.forms button:nth-child(1) {
+  background-color: crimson;
+}
+
+
+
+
+.delete-item {
+  position: fixed;
+  z-index: 100;
+  background: white;
+  border-radius: 10px;
+  width: 80%;
+  top: 30vh;
+  left: 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: none;
+}
+
+.delete-item.active {
+  display: block;
+}
+
+.modal__title {
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid #00329e;
+  background: #00329e;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal__content {
+  padding: 1rem;
+}
+
+.modal__actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #00329e;
+  background: #00329e;
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.btn--danger {
+  background: #d30808;
+  color: white;
+  border-color: #d30808;
+}
+
