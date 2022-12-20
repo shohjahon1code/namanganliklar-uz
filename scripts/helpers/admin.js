@@ -108,7 +108,8 @@ function showEditModal() {
 }
 // cancel
 editForms.addEventListener("click", (e) => {
-  if(e.target.textContent == 'Cancel'){
+  e.preventDefault();
+  if (e.target.textContent == "Cancel") {
     elEditModal.classList.remove("active");
     backdrop.classList.remove("visible");
   }
@@ -117,6 +118,47 @@ editForms.addEventListener("click", (e) => {
 elCardsAdmin.addEventListener("click", (e) => {
   if (e.target.matches(".edit")) {
     showEditModal();
+    const id = e.target.dataset.id;
+    fetch(`https://639c0ef864fcf9c11caa1a4a.mockapi.io/posts/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        let title = editForms.title1;
+        let subtitle = editForms.subtitle1;
+        let img = editForms.url1;
+        let date = editForms.date1;
+
+        title.value = data.title;
+        subtitle.value = data.subTitle;
+        img.value = data.img;
+        date.value = data.createdAt;
+        editForms.resultImg.src = data.img;
+
+        editForms.addEventListener("click", (e) => {
+          if (e.target.matches(".elform-btn")) {
+            const post = {
+              createdAt: date.value,
+              title: title.value,
+              subTitle: subtitle.value,
+              img: img.value,
+            };
+            console.log(id, post);
+
+            fetch(`https://639c0ef864fcf9c11caa1a4a.mockapi.io/posts/${id}`, {
+              method: "PUT",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(post),
+            })
+              .then((res) => res.json())
+              .then((data) => {
+                console.log(data);
+                window.location.reload();
+              });
+          }
+        });
+      })
+      .catch((err) => console.log(err));
   }
 });
 
