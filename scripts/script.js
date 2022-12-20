@@ -4,6 +4,8 @@ const elNewsCard = findElement(".news__left");
 const template = findElement("#template");
 const elTopNews = findElement(".hero__articles");
 const fragment = document.createDocumentFragment();
+const searchBtn = document.getElementById("search-btn");
+const elSearchMenu = document.querySelector(".search-menu");
 
 let posts = [];
 let topPosts = [];
@@ -15,12 +17,12 @@ fetch(`https://639c0ef864fcf9c11caa1a4a.mockapi.io/posts`)
     topPostHandler(posts);
   });
 
-  function topPostHandler(posts) {
-    const template = findElement("#post-temp");
-    const fragment = document.createDocumentFragment();
+function topPostHandler(posts) {
+  const template = findElement("#post-temp");
+  const fragment = document.createDocumentFragment();
 
   posts.reverse().forEach((post) => {
-    elTopNews.textContent = ''
+    elTopNews.textContent = "";
     if (post.top) {
       topPosts.push(post);
     }
@@ -39,7 +41,7 @@ fetch(`https://639c0ef864fcf9c11caa1a4a.mockapi.io/posts`)
   });
 }
 
-export function renderPosts(posts = posts, parentNode = elNewsCard) {
+function renderPosts(posts = posts, parentNode = elNewsCard) {
   parentNode.textContent = "";
 
   posts.reverse().forEach((post) => {
@@ -57,3 +59,18 @@ export function renderPosts(posts = posts, parentNode = elNewsCard) {
   });
   parentNode.append(fragment);
 }
+
+// search News
+const searchBarOpen = () => {
+  elSearchMenu.classList.toggle("search-active");
+  searchBtn.style.display = "none";
+};
+
+window.addEventListener("click", (e) => {
+  if (!e.path.includes(elSearchMenu) && !e.path.includes(searchBtn)) {
+    elSearchMenu.classList.remove("search-active");
+    searchBtn.style.display = "block";
+  }
+});
+
+searchBtn.addEventListener("click", searchBarOpen);

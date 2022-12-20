@@ -46,7 +46,7 @@ a{
   max-width: 50%;
   width: 100%;
   min-height: 400px;
-  top: 30%;
+  top: 0%;
   right: 30%;
   background-color: #fff;
   z-index: 10;
@@ -149,3 +149,17 @@ a{
   border-color: #d30808;
 }
 
+.search-menu {
+  display: none;
+}
+
+#search {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.search-active {
+  display: flex;
+}
